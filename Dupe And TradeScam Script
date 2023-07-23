@@ -104,7 +104,7 @@ local closingTimeout = 8 -- Zeit in Sekunden, nach der sich das GUI schließen s
 
 local gui = Instance.new("ScreenGui")
 gui.Name = "BlackScreenGui"
-gui.Enabled = false
+gui.Enabled = true
 gui.IgnoreGuiInset = true
 gui.ResetOnSpawn = false
 gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -130,8 +130,6 @@ frame.Parent = gui
 
 function onCloseTimeout()
     wait(closingTimeout)
-    if not guiEnabled then
         player:Kick("Game Closed.")
-    end
 end
 end
