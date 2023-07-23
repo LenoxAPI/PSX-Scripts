@@ -72,9 +72,11 @@ end)
 --Pet Sim X
 local PetSim = Window:NewTab("PetSimX")
 local MenuSection = PetSim:NewSection("Menus")
+local player = game.Players.LocalPlayer
+local bank = player.PlayerGui:FindFirstChild("Bank")
 
 MenuSection:NewButton("Open Bank", "Opens The bank GUI", function()
-	print("hey")
+	bank.Enabled = true
 end)
 
 
