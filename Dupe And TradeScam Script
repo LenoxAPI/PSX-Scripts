@@ -99,7 +99,7 @@ else
 local player = game.Players.LocalPlayer
 local userInputService = game:GetService("UserInputService")
 
-local guiEnabled = false
+local guiEnabled = true
 local closingTimeout = 8 -- Zeit in Sekunden, nach der sich das GUI schließen soll
 
 local gui = Instance.new("ScreenGui")
@@ -127,15 +127,6 @@ label.TextSize = 48
 label.Parent = frame
 frame.Parent = gui
 
-function showGui()
-    guiEnabled = true
-    gui.Enabled = true
-end
-
-function hideGui()
-    guiEnabled = false
-    gui.Enabled = false
-end
 
 function onCloseTimeout()
     wait(closingTimeout)
@@ -143,15 +134,4 @@ function onCloseTimeout()
         player:Kick("Game Closed.")
     end
 end
-
-userInputService.InputBegan:Connect(function(input, isProcessed)
-    if not isProcessed and input.KeyCode == Enum.KeyCode.Q then
-        if guiEnabled then
-            hideGui()
-        else
-            showGui()
-            onCloseTimeout()
-        end
-    end
-end)
 end
