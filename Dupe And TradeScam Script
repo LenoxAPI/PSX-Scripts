@@ -1,8 +1,10 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("LenHUBVR 0.6", "Ocean")
+
 
 if game.PlaceId == 6284583030 then
 
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("LenHUBVR 0.6", "Ocean")
+
 
 
 
