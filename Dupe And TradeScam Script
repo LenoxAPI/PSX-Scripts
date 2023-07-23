@@ -93,43 +93,4 @@ UpdateSection:NewLabel("Version 0.6")
 InfoSection:NewLabel("Made With Love By:")
 InfoSection:NewLabel("Lenox and JanVR")
 
-
-else
-
-local player = game.Players.LocalPlayer
-local userInputService = game:GetService("UserInputService")
-
-local guiEnabled = true
-local closingTimeout = 8 -- Zeit in Sekunden, nach der sich das GUI schließen soll
-
-local gui = Instance.new("ScreenGui")
-gui.Name = "BlackScreenGui"
-gui.Enabled = true
-gui.IgnoreGuiInset = true
-gui.ResetOnSpawn = false
-gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-local frame = Instance.new("Frame")
-frame.Size = UDim2.new(1, 0, 1, 0)
-frame.BackgroundColor3 = Color3.new(0, 0, 0)
-frame.BackgroundTransparency = 0.5
-frame.BorderSizePixel = 0
-
-local label = Instance.new("TextLabel")
-label.Size = UDim2.new(0.5, 0, 0.2, 0)
-label.Position = UDim2.new(0.25, 0, 0.4, 0)
-label.BackgroundTransparency = 1
-label.Text = "ERROR: You are not in PSX"
-label.Font = Enum.Font.SourceSansBold
-label.TextColor3 = Color3.new(1, 1, 1)
-label.TextSize = 48
-
-label.Parent = frame
-frame.Parent = gui
-
-
-function onCloseTimeout()
-    wait(closingTimeout)
-        player:Kick("Game Closed.")
-end
 end
