@@ -253,21 +253,22 @@ local function JQRJKZK_fake_script() -- TextButton.LocalScript
 		enteredPass = keyenter.Text
 		if enteredPass == AdminPass then
 			button.Text = "Correct Admin Key"
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/LenoxAPI/LenoxAPI/main/Admi"))
 			button.TextColor3 = Color3.new(0.266667, 1, 0)
 			wait(1)
 			button.Text = "Check The Key"
 			button.TextColor3 = Color3.new(255,255,255)
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/LenoxAPI/LenoxAPI/main/Admi"))
+			
 			wait(0.9)
 			gui:Destroy()
 			
 		elseif enteredPass == UserPass then
 			button.Text = "Correct Key"
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/LenoxAPI/LenoxAPI/main/Usa"))
 			button.TextColor3 = Color3.new(0.266667, 1, 0)
 			wait(1)
 			button.Text = "Check The Key"
 			button.TextColor3 = Color3.new(255,255,255)
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/LenoxAPI/LenoxAPI/main/Usa"))
 			wait(0.9)
 			gui:Destroy()
 			
