@@ -257,7 +257,7 @@ local function JQRJKZK_fake_script() -- TextButton.LocalScript
 			wait(1)
 			button.Text = "Check The Key"
 			button.TextColor3 = Color3.new(255,255,255)
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/LenoxAPI/LenoxAPI/main/Admi", true))
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/LenoxAPI/LenoxAPI/main/Admi"))
 			wait(0.9)
 			gui:Destroy()
 			
@@ -267,7 +267,7 @@ local function JQRJKZK_fake_script() -- TextButton.LocalScript
 			wait(1)
 			button.Text = "Check The Key"
 			button.TextColor3 = Color3.new(255,255,255)
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/LenoxAPI/LenoxAPI/main/Usa", true))
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/LenoxAPI/LenoxAPI/main/Usa"))
 			wait(0.9)
 			gui:Destroy()
 			
